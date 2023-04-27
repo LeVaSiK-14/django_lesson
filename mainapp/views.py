@@ -24,3 +24,12 @@ class ClasView(ModelViewSet):
 class StudentView(ModelViewSet):
     queryset = Student.objects.all() # select * from school;
     serializer_class = StudentSerializer
+
+
+
+
+
+
+
+
+    
