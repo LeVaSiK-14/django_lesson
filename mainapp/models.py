@@ -35,6 +35,8 @@ class Clas(models.Model):
     def __str__(self):
         return f'{self.grade} класс в школе {self.school.number}'
 
+    
+
 
 class Student(models.Model):
     first_name = models.CharField(max_length=127)
@@ -45,3 +47,6 @@ class Student(models.Model):
         Clas, on_delete=models.CASCADE, 
         related_name='students'
     )
+    image = models.ImageField(upload_to='images/')
+
+
